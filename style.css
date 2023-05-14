@@ -1,0 +1,249 @@
+* {
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+  background-color: rgb(250, 249, 247);
+  overflow: auto;
+}
+
+.navbar{
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: #319DA0; 
+    position: relative; 
+    margin-bottom: 0px; 
+    margin-top: 0px; 
+    transition: none;
+    width: 100%;
+    min-height: 60px;
+}
+.navbar::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+img {
+  max-width: 400px;
+  margin-top: 10px;
+}
+
+.navbar a{
+    text-decoration: none;
+    max-width: 400px; 
+    max-height: 60px; 
+    display: inline-flex; 
+    align-items: center;
+}
+.navbar .navbar-liste{
+    display: inline;
+}
+.navbar .navbar-liste ul{
+    margin: 0;
+    padding: 0;
+    float: right; 
+    margin-right: 20px
+}
+.navbar .navbar-liste li{
+    display: inline-block; 
+    line-height: 80px;
+}
+.navbar .navbar-liste li a{
+    color: #FFD39A; 
+    text-decoration: none; 
+    font-size: 20px; 
+    font-weight: 500px; 
+    padding: 6px 10px; 
+    font-family: Roboto; 
+    transition: .5s;
+}
+main{
+  width: 100%;
+  background-color: transparent;
+  min-height: 100vh;
+}
+.center{
+  width: 100%;
+  height: 100%;
+}
+.container{
+  margin: 0;
+  padding-left: 20%;
+  padding-right: 20%;
+  width: 100%;
+  height: 100px;
+  background-color: transparent;
+}
+.container::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+.container .dropdown{
+  display: inline-block;
+  width: 33%;
+  padding: 20px;
+}
+form.example input[type=text] {
+  padding: 10px;
+  font-size: 17px;
+  border: 1px solid #FFD39A;
+  float: left;
+  width: 80%;
+  background: #f1f1f1;
+  border-radius: 5px;
+}
+
+form.example button {
+  float: right;
+  width: 20%;
+  padding: 10px;
+  background: #FFD39A;
+  color: black;
+  font-size: 17px;
+  border: 1px solid #FFD39A;
+  border-left: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+form.example button:hover {
+  background: #FFD39A;
+}
+
+form.example::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.dropbtn {
+  background-color:#FFD39A;
+  color: black;
+  font-family: Roboto;
+  font-size: 20px; 
+  font-weight: 500; 
+  width: 250px;
+  height: 40px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  border-color: transparent;
+}
+
+.dropbtn:hover, .dropbtn:focus {
+  background-color: #FFD39A;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+#text{
+  position: absolute;
+  display: inline-flex;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color:rgb(255, 245, 225);
+  border-radius: 5px;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #ddd} */
+
+.container{
+ background-color:rgb(255, 245, 225);
+ width: 100%;
+ padding: 20px;
+ position: relative;
+}
+
+
+#course{
+  padding: 1vw 5vw 0 5vw;
+  text-align: center;
+}
+#course .course-box{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-gap: 1rem;
+  margin-top: 10px;
+}
+#course .courses{
+  background-size: cover;
+  border: 1px solid #FFD39A;
+  border-radius: 10px;
+  text-align: center;
+  background:#fff;
+  height: 100%;
+  padding: 10px;
+}
+#course .courses a {
+  text-decoration: none;
+}
+#course .courses img{
+  border: 1px solid #FFD39A;
+  border-radius: 10px;
+  width: 100%;
+  height: 60%;
+  background-size: cover;
+  background-position: center;
+}
+#course .courses .details{
+  padding: 15px 15px 0 15px;
+}
+#course .courses .details h1{
+  color: #319DA0;
+}
+#course .courses .details .metin p{
+  font-size: 20px;
+  color: black;
+}
+#course .courses .details span {
+  float: left;
+  font-size: 20px;
+  font-weight: bold;
+  color: #319DA0;
+  margin-top: 5px;
+}
+#course .courses .cost p{
+  font-size: 20px;
+  font-weight: bold;
+  max-width: 120px;
+  padding-top: 5px; 
+  float: right;
+  padding-right: 15px;
+  color:#319DA0;
+}
+footer{
+  position: relative;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 70px;
+  background-color: #319DA0;
+  color: #FFD39A;
+  
+}
+.footerContent{
+  padding-left: 5%; 
+  padding-top: 30px;
+}
+
+.navbar ul li a:hover {background-color:#349598}  
+.show {display:block;}
+
